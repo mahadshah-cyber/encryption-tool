@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="15" style="-fx-background: #0d0d17; -fx-padding: 25;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.encryptool.controller.MainController">
+    <Label text="Encryption Tool" style="-fx-text-fill: white; -fx-font-size: 22px; -fx-font-weight: bold;"/>
+    <Label text="AES-256 / RSA-2048 File Encryption" style="-fx-text-fill: #888;"/>
+    <HBox spacing="10"><Label text="Algorithm:"/><ComboBox fx:id="algorithmCombo" prefWidth="150"/></HBox>
+    <HBox spacing="20"><RadioButton fx:id="encryptRadio" text="Encrypt" selected="true"/><RadioButton fx:id="decryptRadio" text="Decrypt"/></HBox>
+    <VBox spacing="5"><Label text="Input File:"/><HBox spacing="10"><TextField fx:id="inputFileField" promptText="Select file..." HBox.hgrow="ALWAYS"/><Button text="Browse" onAction="#browseInput"/></HBox></VBox>
+    <VBox spacing="5"><Label text="Output File:"/><HBox spacing="10"><TextField fx:id="outputFileField" promptText="Save as..." HBox.hgrow="ALWAYS"/><Button text="Browse" onAction="#browseOutput"/></HBox></VBox>
+    <VBox spacing="5"><Label text="Key File:"/><HBox spacing="10"><TextField fx:id="keyFileField" promptText="Select key file..." HBox.hgrow="ALWAYS"/><Button text="Browse" onAction="#browseKey"/><Button fx:id="generateKeyBtn" text="Generate" onAction="#generateKey" visible="false"/></HBox></VBox>
+    <Button text="Encrypt / Decrypt" onAction="#process" prefHeight="40" style="-fx-background: #dc2626; -fx-text-fill: white; -fx-font-size: 14px;"/>
+    <TextArea fx:id="logArea" editable="false" VBox.vgrow="ALWAYS" style="-fx-control-inner-background: #0d0d17; -fx-text-fill: #22c55e; -fx-font-family: Consolas;"/>
+</VBox>

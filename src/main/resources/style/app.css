@@ -1,0 +1,7 @@
+.root{-fx-background-color:#0d0d17;}
+.text-field{-fx-background-color:#1a1a2e;-fx-text-fill:white;-fx-prompt-text-fill:#555;-fx-border-color:#2a2a3a;-fx-border-radius:6;-fx-padding:8 12;}
+.button{-fx-cursor:hand;-fx-background-radius:6;-fx-padding:8 16;}
+.combo-box{-fx-background-color:#1a1a2e;-fx-text-fill:white;}
+.progress-bar .bar{-fx-background-color:#dc2626;}
+.text-area{-fx-background-color:#0d0d17;-fx-border-color:#2a2a3a;}
+.text-area .content{-fx-background-color:#0d0d17;}
